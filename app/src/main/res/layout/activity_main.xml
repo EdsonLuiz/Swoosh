@@ -51,7 +51,7 @@
     <Button
             android:text="GET STARTED"
             android:layout_width="0dp"
-            android:layout_height="60dp" android:id="@+id/buttonGetStarted"
+            android:layout_height="60dp" android:id="@+id/buttonNext"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp" android:layout_marginBottom="24dp"
             app:layout_constraintBottom_toBottomOf="@+id/imageHome" android:textSize="18sp"

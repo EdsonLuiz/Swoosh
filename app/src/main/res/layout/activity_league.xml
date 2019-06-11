@@ -62,4 +62,15 @@
                 android:textOn="Co-Ed" tools:text="Co-Ed" android:textColor="@android:color/background_light"
                 android:background="@drawable/swoosh_toggle"/>
     </LinearLayout>
+    <Button
+            android:text="next"
+            android:layout_width="0dp"
+            android:layout_height="60dp" android:id="@+id/buttonNext"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/montserrat" android:textColor="@android:color/background_light"
+            android:background="@drawable/swoosh_btn" android:textAllCaps="true"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"/>
 </android.support.constraint.ConstraintLayout>
