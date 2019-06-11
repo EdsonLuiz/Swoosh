@@ -37,10 +37,10 @@
             android:layout_height="wrap_content" android:id="@+id/textOnGoingAllOut" android:textSize="24sp"
             android:textColor="@android:color/background_light"
             app:layout_constraintTop_toBottomOf="@+id/textGoAllIn" app:layout_constraintEnd_toEndOf="@+id/textGoAllIn"
-            app:layout_constraintStart_toStartOf="@+id/textGoAllIn" android:textAlignment="center"
-            android:fontFamily="@font/montserrat_bold" android:textStyle="bold"/>
+            app:layout_constraintStart_toStartOf="@+id/textGoAllIn" android:textAlignment="viewStart"
+            android:fontFamily="@font/montserrat"/>
     <TextView
-            android:text="Find a team in your city & dominate a league"
+            android:text="Find a team in your city &amp; dominate a league"
             android:layout_width="0dp"
             android:layout_height="wrap_content" android:id="@+id/textFindATeam" android:textSize="18sp"
             android:layout_marginTop="60dp"
@@ -48,5 +48,13 @@
             app:layout_constraintEnd_toEndOf="@+id/textGoAllIn"
             app:layout_constraintStart_toStartOf="@+id/textGoAllIn" android:textAlignment="center"
             android:textColor="@android:color/background_light"/>
+    <Button
+            android:text="GET STARTED"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/buttonGetStarted"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp" android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageHome" android:textSize="18sp"
+            android:fontFamily="@font/montserrat"/>
 
 </android.support.constraint.ConstraintLayout>
