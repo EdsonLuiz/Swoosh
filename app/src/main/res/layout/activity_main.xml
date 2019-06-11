@@ -22,5 +22,31 @@
             app:layout_constraintTop_toTopOf="@+id/imageHome" android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:text="GO ALL IN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textGoAllIn"
+            android:textSize="48dp"
+            android:textColor="@android:color/background_light" android:layout_marginTop="80dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageLogo" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:fontFamily="@font/montserrat"/>
+    <TextView
+            android:text="ON GOING ALL OUT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/textOnGoingAllOut" android:textSize="24sp"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintTop_toBottomOf="@+id/textGoAllIn" app:layout_constraintEnd_toEndOf="@+id/textGoAllIn"
+            app:layout_constraintStart_toStartOf="@+id/textGoAllIn" android:textAlignment="center"
+            android:fontFamily="@font/montserrat_bold" android:textStyle="bold"/>
+    <TextView
+            android:text="Find a team in your city & dominate a league"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/textFindATeam" android:textSize="18sp"
+            android:layout_marginTop="60dp"
+            app:layout_constraintTop_toBottomOf="@+id/textOnGoingAllOut"
+            app:layout_constraintEnd_toEndOf="@+id/textGoAllIn"
+            app:layout_constraintStart_toStartOf="@+id/textGoAllIn" android:textAlignment="center"
+            android:textColor="@android:color/background_light"/>
 
 </android.support.constraint.ConstraintLayout>
