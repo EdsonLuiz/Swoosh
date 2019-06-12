@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Toast
 import com.example.swoosh.R
 import com.example.swoosh.utilities.EXTRA_LEAGUE
+import com.example.swoosh.utilities.EXTRA_SKILL
 import kotlinx.android.synthetic.main.activity_skill.*
 
 class SkillActivity : AppCompatActivity() {
@@ -33,7 +34,8 @@ class SkillActivity : AppCompatActivity() {
     fun onSkillFinishClicked(view: View) {
         if(skill != "") {
             val finishActivity = Intent(this, FinishActivity::class.java)
-            startActivity(finishActivity)
+            finishActivity.putExtra(EXTRA_LEAGUE, leagueExtra)
+            finishActivity.putExtra(EXTRA_SKILL, skill)
         } else {
             Toast.makeText(this, "Select one skill",Toast.LENGTH_SHORT).show()
         }
