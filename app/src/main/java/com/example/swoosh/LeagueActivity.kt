@@ -4,6 +4,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import kotlinx.android.synthetic.main.activity_league.*
 
 class LeagueActivity : AppCompatActivity() {
 
@@ -19,7 +20,22 @@ class LeagueActivity : AppCompatActivity() {
         startActivity(skillActivity)
     }
 
-    fun onMensClicked(view: View) {}
-    fun onWomensClicked(view: View) {}
-    fun onCoEdClicked(view: View) {}
+    fun onMensClicked(view: View) {
+        toggleButtonWomens.isChecked = false
+        toggleButtonCoEd.isChecked = false
+
+        selectedLeague = "mens"
+    }
+    fun onWomensClicked(view: View) {
+        toggleButtonCoEd.isChecked = false
+        toggleButtonMens.isChecked = false
+
+        selectedLeague = "womens"
+    }
+    fun onCoEdClicked(view: View) {
+        toggleButtonMens.isChecked = false
+        toggleButtonWomens.isChecked = false
+
+        selectedLeague = "co-ed"
+    }
 }
