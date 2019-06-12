@@ -46,7 +46,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/ToggleButtonMens" tools:text="Mens"
                 android:textOff="Mens" android:textOn="Mens" android:textColor="@android:color/background_light"
-                android:background="@drawable/swoosh_toggle"/>
+                android:background="@drawable/swoosh_toggle" android:onClick="onMensClicked"/>
         <ToggleButton
                 android:text="ToggleButton"
                 android:layout_width="match_parent"
@@ -54,13 +54,13 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp" android:textOff="Womens" android:textOn="Womens"
                 tools:text="Womens" android:textColor="@android:color/background_light"
-                android:background="@drawable/swoosh_toggle"/>
+                android:background="@drawable/swoosh_toggle" android:onClick="onWomensClicked"/>
         <ToggleButton
                 android:text="ToggleButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/toggleButtonCoEd" android:textOff="Co-Ed"
                 android:textOn="Co-Ed" tools:text="Co-Ed" android:textColor="@android:color/background_light"
-                android:background="@drawable/swoosh_toggle"/>
+                android:background="@drawable/swoosh_toggle" android:onClick="onCoEdClicked"/>
     </LinearLayout>
     <Button
             android:text="next"
