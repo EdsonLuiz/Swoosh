@@ -1,5 +1,6 @@
 package com.example.swoosh.controller
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -18,5 +19,8 @@ class SkillActivity : AppCompatActivity() {
 
     fun onBegginerClicked(view: View) {}
     fun onBallerClicked(view: View) {}
-    fun onSkillFinishClicked(view: View) {}
+    fun onSkillFinishClicked(view: View) {
+        val finishActivity = Intent(this, FinishActivity::class.java)
+        startActivity(finishActivity)
+    }
 }
