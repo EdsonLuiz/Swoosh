@@ -43,7 +43,8 @@
             android:background="@drawable/swoosh_btn" android:textAllCaps="true"
             android:layout_marginBottom="24dp" app:layout_constraintBottom_toBottomOf="@+id/imageBgSkillPage"
             android:layout_marginStart="16dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="parent"/>
+            android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="onSkillFinishClicked"/>
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="0dp"
@@ -58,12 +59,13 @@
                 android:layout_height="wrap_content" android:id="@+id/begginerButton" android:layout_weight="1"
                 android:background="@drawable/swoosh_toggle" android:textColor="@android:color/background_light"
                 android:textOff="Begginer" android:textOn="Begginer" tools:text="Begginer"
-                android:layout_marginRight="16dp"/>
+                android:layout_marginRight="16dp" android:onClick="onBegginerClicked"/>
         <ToggleButton
                 android:text="ToggleButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:id="@+id/ballerButton" android:layout_weight="1"
                 android:background="@drawable/swoosh_toggle" android:textColor="@android:color/background_light"
-                android:textOff="Baller" android:textOn="Baller" tools:text="Baller" android:layout_marginLeft="16dp"/>
+                android:textOff="Baller" android:textOn="Baller" tools:text="Baller" android:layout_marginLeft="16dp"
+                android:onClick="onBallerClicked"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
