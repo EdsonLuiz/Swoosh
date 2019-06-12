@@ -16,8 +16,11 @@ class LeagueActivity : AppCompatActivity() {
     }
 
     fun leagueNextClicked(view: View) {
-        val skillActivity = Intent(this, SkillActivity::class.java)
-        startActivity(skillActivity)
+        if(selectedLeague != "") {
+            val skillActivity = Intent(this, SkillActivity::class.java)
+            startActivity(skillActivity)
+        }
+
     }
 
     fun onMensClicked(view: View) {
