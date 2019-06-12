@@ -2,4 +2,8 @@
     <string name="app_name">Swoosh</string>
     <string name="search_league">Looking for a nanana nanana league near you.</string>
     <string name="background_image">background image</string>
+    <string name="go_all_in">GO ALL IN</string>
+    <string name="on_going_all_out">ON GOING ALL OUT</string>
+    <string name="p_home"><![CDATA[Find a team in your city & dominate a league]]></string>
+    <string name="get_started">GET STARTED</string>
 </resources>
