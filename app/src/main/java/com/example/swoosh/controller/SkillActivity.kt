@@ -6,10 +6,12 @@ import android.os.Bundle
 import android.view.View
 import com.example.swoosh.R
 import com.example.swoosh.utilities.EXTRA_LEAGUE
+import kotlinx.android.synthetic.main.activity_skill.*
 
 class SkillActivity : AppCompatActivity() {
 
     var leagueExtra = ""
+    var skill = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,8 +19,16 @@ class SkillActivity : AppCompatActivity() {
         leagueExtra = intent.getStringExtra(EXTRA_LEAGUE)
     }
 
-    fun onBegginerClicked(view: View) {}
-    fun onBallerClicked(view: View) {}
+    fun onBegginerClicked(view: View) {
+        ballerButton.isChecked = false
+        skill = "begginer"
+    }
+
+    fun onBallerClicked(view: View) {
+        begginerButton.isChecked = false
+        skill = "baller"
+    }
+
     fun onSkillFinishClicked(view: View) {
         val finishActivity = Intent(this, FinishActivity::class.java)
         startActivity(finishActivity)
