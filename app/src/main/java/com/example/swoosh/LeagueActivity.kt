@@ -7,6 +7,8 @@ import android.view.View
 
 class LeagueActivity : AppCompatActivity() {
 
+    var selectedLeague = ""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_league)
@@ -16,4 +18,8 @@ class LeagueActivity : AppCompatActivity() {
         val skillActivity = Intent(this, SkillActivity::class.java)
         startActivity(skillActivity)
     }
+
+    fun onMensClicked(view: View) {}
+    fun onWomensClicked(view: View) {}
+    fun onCoEdClicked(view: View) {}
 }
