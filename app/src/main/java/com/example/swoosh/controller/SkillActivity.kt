@@ -36,6 +36,7 @@ class SkillActivity : AppCompatActivity() {
             val finishActivity = Intent(this, FinishActivity::class.java)
             finishActivity.putExtra(EXTRA_LEAGUE, leagueExtra)
             finishActivity.putExtra(EXTRA_SKILL, skill)
+            startActivity(finishActivity)
         } else {
             Toast.makeText(this, "Select one skill",Toast.LENGTH_SHORT).show()
         }
