@@ -44,7 +44,7 @@
         <ToggleButton
                 android:text="ToggleButton"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/ToggleButtonMens" tools:text="Mens"
+                android:layout_height="wrap_content" android:id="@+id/toggleButtonMens" tools:text="Mens"
                 android:textOff="Mens" android:textOn="Mens" android:textColor="@android:color/background_light"
                 android:background="@drawable/swoosh_toggle" android:onClick="onMensClicked"/>
         <ToggleButton
