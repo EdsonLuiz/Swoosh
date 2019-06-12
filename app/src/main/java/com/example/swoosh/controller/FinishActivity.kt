@@ -1,5 +1,6 @@
 package com.example.swoosh.controller
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.example.swoosh.R
@@ -11,6 +12,7 @@ class FinishActivity : AppCompatActivity() {
 
     lateinit var player : Player
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
