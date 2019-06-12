@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import com.example.swoosh.R
+import com.example.swoosh.utilities.EXTRA_LEAGUE
 import kotlinx.android.synthetic.main.activity_league.*
 
 class LeagueActivity : AppCompatActivity() {
@@ -20,6 +21,7 @@ class LeagueActivity : AppCompatActivity() {
     fun leagueNextClicked(view: View) {
         if(selectedLeague != "") {
             val skillActivity = Intent(this, SkillActivity::class.java)
+            skillActivity.putExtra(EXTRA_LEAGUE, selectedLeague)
             startActivity(skillActivity)
         } else {
             Toast.makeText(this, "Select a league", Toast.LENGTH_SHORT).show()
